@@ -9,39 +9,41 @@
 
 <div class="calculator">
 
-<input type="text" id="display" value="0" disabled>
+<div class="screen">
+<div id="formula" class="formula"></div>
+<input type="text" id="display" value="0" readonly>
+</div>
 
 <div class="buttons">
 
-<button onclick="press(7)">7</button>
-<button onclick="press(8)">8</button>
-<button onclick="press(9)">9</button>
-<button onclick="setOperator('+')" class="operator">+</button>
+<button onclick="press('7')">7</button>
+<button onclick="press('8')">8</button>
+<button onclick="press('9')">9</button>
+<button onclick="setOperator('*')">×</button>
 
-<button onclick="press(4)">4</button>
-<button onclick="press(5)">5</button>
-<button onclick="press(6)">6</button>
-<button onclick="setOperator('-')" class="operator">-</button>
+<button onclick="press('4')">4</button>
+<button onclick="press('5')">5</button>
+<button onclick="press('6')">6</button>
+<button onclick="setOperator('-')">−</button>
 
-<button onclick="press(1)">1</button>
-<button onclick="press(2)">2</button>
-<button onclick="press(3)">3</button>
-<button onclick="setOperator('*')" class="operator">*</button>
+<button onclick="press('1')">1</button>
+<button onclick="press('2')">2</button>
+<button onclick="press('3')">3</button>
+<button onclick="setOperator('+')">+</button>
 
-<button onclick="developer()" class="special">A</button>
-<button onclick="press(0)">0</button>
-<button onclick="appInfo()" class="special">B</button>
-<button onclick="setOperator('/')" class="operator">/</button>
-
-<button onclick="calculate()" class="equal">=</button>
+<button onclick="developer()">A</button>
+<button onclick="press('0')">0</button>
+<button onclick="appInfo()">B</button>
+<button onclick="setOperator('/')">÷</button>
 
 <button onclick="clearDisplay()" class="clear">Clear</button>
+<button onclick="calculate()" class="equal">=</button>
 
 </div>
+
 </div>
 
-
-<!-- FLOATING POPUP -->
+<!-- POPUP -->
 <div id="popup" class="popup">
 <div class="popup-content">
 

@@ -1,5 +1,5 @@
 body{
-font-family: Segoe UI;
+font-family:Segoe UI;
 background:#e6e6e6;
 display:flex;
 justify-content:center;
@@ -15,13 +15,22 @@ width:260px;
 box-shadow:0 0 10px rgba(0,0,0,0.3);
 }
 
+.screen{
+text-align:right;
+margin-bottom:10px;
+}
+
+.formula{
+font-size:14px;
+color:gray;
+height:18px;
+}
+
 #display{
 width:100%;
 height:45px;
 font-size:26px;
 text-align:right;
-padding:5px;
-margin-bottom:10px;
 border:1px solid #aaa;
 background:white;
 }
@@ -45,31 +54,17 @@ button:hover{
 background:#d0d0d0;
 }
 
-.operator{
-background:#cfe2ff;
-}
-
-.special{
-background:#ffe599;
-}
-
 .equal{
-grid-column:4;
-grid-row:5;
-height:96px;
+grid-column:span 2;
 background:#4CAF50;
 color:white;
-font-size:22px;
 }
 
 .clear{
-grid-column:1 / span 3;
+grid-column:span 2;
 background:#ff5c5c;
 color:white;
 }
-
-
-/* POPUP */
 
 .popup{
 display:none;
@@ -90,13 +85,12 @@ border-radius:8px;
 width:250px;
 text-align:center;
 position:relative;
-box-shadow:0 0 10px black;
 }
 
 .close{
 position:absolute;
 top:8px;
 right:12px;
-font-size:20px;
 cursor:pointer;
+font-size:20px;
 }
